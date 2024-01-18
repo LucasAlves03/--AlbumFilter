@@ -130,7 +130,7 @@ footer{
 }
 @media screen and (max-width: 800px){
   #Navtitle{
-    font-size: 13pt;
+    display: none;
   }
   .content-position{
     margin-left: auto;
@@ -139,12 +139,8 @@ footer{
   label{
     font-size: 8pt;
   }
-  #search {
-        font-size: 18px;
-    }
-
-    #search-btn {
-        font-size: 18px;
+  #search,#search-btn {
+    display: none;
     }
     #artistFilter,
     #yearFilter {
@@ -154,13 +150,24 @@ footer{
     }
     #album-cards{
         grid-template-columns: repeat(2, 1fr);
+        gap: 1px;
     }
     .card{
-        max-width: 400px;
+        max-width: 150px;
+        height: 300px;
     }
-}
-@media screen and (max-width: 650px){
-    #album-cards{
-            grid-template-columns: repeat(1, 1fr);
-        }
+    .artist{
+      font-size: 13pt;
+    }
+    .title{
+      padding: 5px;
+      font-size: 10pt;
+    }
+    .year{
+      font-size: 9pt;
+      padding: 5px;
+    }
+    .spotify{
+      width: 30px;
+    }
 }
